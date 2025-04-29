@@ -1,0 +1,21 @@
+﻿<Page x:Class="a.Pages.ApplicantsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:a.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ApplicantsPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="300*"/>
+            <RowDefinition Height="800*"/>
+        </Grid.RowDefinitions>
+        <Frame Grid.Column="1" Grid.Row="1" Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>
+        <StackPanel Grid.Row="1">
+            <Button x:Name="btnSubApp" Content="Подать заявку" Click="btnSup" Margin="208,0,183,0" Background="#0b61a4" Height="37" />
+        </StackPanel>
+    </Grid>
+</Page>
