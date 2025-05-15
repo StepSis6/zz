@@ -13,10 +13,10 @@ namespace a
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ApplicantsDatabaseEntities : DbContext
+    public partial class ApplicantsDatabaseEntities1 : DbContext
     {
-        public ApplicantsDatabaseEntities()
-            : base("name=ApplicantsDatabaseEntities")
+        public ApplicantsDatabaseEntities1()
+            : base("name=ApplicantsDatabaseEntities1")
         {
         }
     

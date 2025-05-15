@@ -8,6 +8,6 @@ namespace a.ApplicationData
 {
     class AppConect
     {
-        public static ApplicantsDatabaseEntities modelObd = new ApplicantsDatabaseEntities();
+        public static ApplicantsDatabaseEntities1 modelObd = new ApplicantsDatabaseEntities1();
     }
 }

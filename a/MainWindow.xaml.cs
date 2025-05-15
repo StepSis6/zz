@@ -31,10 +31,7 @@ namespace a
 
         private void btnBack(object sender, RoutedEventArgs e)
         {
-            if (MainFrame.CanGoBack)
-            {
-                MainFrame.GoBack();
-            }
+            MainFrame.Navigate(new LoginPage());
         }
 
         private void btnSpecial(object sender, RoutedEventArgs e)

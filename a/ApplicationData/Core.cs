@@ -8,6 +8,6 @@ namespace a.ApplicationData
 {
     class Core
     {
-        public static ApplicantsDatabaseEntities DB = new ApplicantsDatabaseEntities();
+        public static ApplicantsDatabaseEntities1 DB = new ApplicantsDatabaseEntities1();
     }
 }

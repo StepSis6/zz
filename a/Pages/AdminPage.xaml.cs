@@ -27,8 +27,35 @@ namespace a.Pages
 
         private void btnAppli(object sender, RoutedEventArgs e)
         {
+            // Скрываем кнопку "Абитуриенты"
             btnApplicantss.Visibility = Visibility.Collapsed;
+
+            // Также скрываем кнопку "Заявления"
+            btnApplicationss.Visibility = Visibility.Collapsed; // добавьте, если она есть
+
+            // Навигируем в страницу ApplicantsAdminPage
             MainFrame.NavigationService.Navigate(new ApplicantsAdminPage());
+        }
+
+        private void btnAppliс(object sender, RoutedEventArgs e)
+        {
+            // Навигируем в страницу ApplicationsAdminPage
+            MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
+
+            if (mainWindow != null && mainWindow.MainFrame != null)
+            {
+                mainWindow.MainFrame.NavigationService.Navigate(new ApplicationsAdminPage());
+
+                // После навигации делаем кнопку "Абитуриенты" видимой снова
+                btnApplicantss.Visibility = Visibility.Visible;
+
+                // И, чтобы скрывать кнопку "Заявления" при входе, можно сделать это тут
+                btnApplicationss.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                MessageBox.Show("MainFrame not found. Ensure it's defined in MainWindow.");
+            }
         }
     }
 }

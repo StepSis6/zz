@@ -9,33 +9,36 @@
       Title="SubAppPage">
 
     <Grid>
-        <StackPanel Margin="20" >
-            <TextBlock Text="Выбрать специальность:" />
-            <ComboBox x:Name="SpecialitiesComboBox"
-                      DisplayMemberPath="Name"
-                      SelectedValuePath="Name" />
-            <TextBlock Text="ФИО:" />
-            <TextBox x:Name="FullNameTextBox" Margin="0,0,0,10"/>
-            
-            <TextBlock Text="Адрес:" />
-            <TextBox x:Name="AddressTextBox" Margin="0,0,0,10"/>
-            
-            <TextBlock Text="Email:" />
-            <TextBox x:Name="EmailTextBox" Margin="0,0,0,10"/>
-            
-            <TextBlock Text="Телефон:" />
-            <TextBox x:Name="PhoneTextBox" Margin="0,0,0,10"/>
-            
-            <TextBlock Text="Баллы:" />
-            <TextBox x:Name="PointsTextBox" Margin="0,0,0,10"/>
-            
-            <TextBlock Text="Дата заявки:" />
-            <DatePicker x:Name="ApplicationDatePicker" Margin="0,0,0,10"/>
-            
-            <TextBlock Text="Время заявки:" />
-            <TextBox x:Name="ApplicationTimeTextBox" Margin="0,0,0,10"  />
-            
-            <Button Content="Подать заявку" Click="btnReservation" Margin="0,10,0,0" />
-        </StackPanel>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="20" >
+
+                <TextBlock Text="Дата подачи:" />
+                <DatePicker x:Name="SubmissionDatePicker" Margin="0,0,0,10" />
+
+                <TextBlock Text="Время подачи:" />
+                <TextBox x:Name="SubmissionTimeTextBox" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Идентификатор заявителя:" />
+                <TextBox x:Name="ApplicantIdTextBox" Margin="0,0,0,10" />
+
+                <TextBlock Text="Выбранные специальности:" />
+                <ComboBox x:Name="SpecialitiesComboBox" 
+                          Margin="0,0,0,10"
+                          DisplayMemberPath="Name"
+                          SelectedValuePath="IdSpeciality" />
+
+                <TextBlock Text="Паспорт:" />
+                <TextBox x:Name="PassportTextBox" Margin="0,0,0,10" />
+
+                <TextBlock Text="Диплом об образовании:" />
+                <TextBox x:Name="EducationDiplomaTextBox" Margin="0,0,0,10" />
+
+                <TextBlock Text="Баллы:" />
+                <TextBox x:Name="PointsTextBox" Margin="0,0,0,10"/>
+
+                <Button Content="Подать заявку" Click="btnReservation" Margin="0,10,0,0" />
+
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>

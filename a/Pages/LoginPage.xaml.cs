@@ -32,7 +32,7 @@ namespace a.Pages
 
             try
             {
-                using (var db = new ApplicantsDatabaseEntities())
+                using (var db = new ApplicantsDatabaseEntities1())
                 {
                     var user = db.User.FirstOrDefault(u => u.email == email && u.password == password);
 

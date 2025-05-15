@@ -10,12 +10,15 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="300*"/>
-            <RowDefinition Height="800*"/>
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="8*" />
         </Grid.RowDefinitions>
-        <Frame Grid.Column="1" Grid.Row="1" Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>
-        <StackPanel Grid.Row="1">
-            <Button x:Name="btnApplicantss" Content="Абитуриенты" Click="btnAppli" Margin="208,0,183,0" Background="#0b61a4" Height="37" />
+
+        <Frame Grid.Row="1" Name="MainFrame" NavigationUIVisibility="Hidden" />
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,10">
+            <Button x:Name="btnApplicantss" Content="Абитуриенты" Click="btnAppli" Margin="10,0" Background="#0b61a4" Height="37" />
+            <Button x:Name="btnApplicationss" Content="Заявления" Click="btnAppliс" Margin="10,0" Background="#0b61a4" Height="37" />
         </StackPanel>
     </Grid>
 </Page>
